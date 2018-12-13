@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+    <style>
+        @font-face {
+
+        font-family: Arcade;
+
+        src: url("Arcade.TTF");
+
+        }
+        body {
+            font-family: Arcade;
+            background: url("Background.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #pong {
+            background: url("static-pong.png");
+            width: 123px;
+            height: 177px;
+            margin-top: 18%;
+            margin-left: 38%;
+            position: absolute;
+        }
+        #pong:hover{
+            background: url("pong.gif");
+        }
+		#breakout {
+		    background: url("static-breakout.png");
+            width: 129px;
+            height: 177px;
+            margin-top: 18%;
+            margin-left: 55%;
+            position: absolute;
+        }
+        #breakout:hover{
+            background: url("breakout.gif");
+        }
+        body>span {
+            color: white;
+            margin-top: 10%;
+            margin-left: 36%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<span>Choose the game you want to play!</span>
+<div id="pong" onclick="document.location.href = 'pong.html';"></a></div>
+<div id="breakout" onclick="document.location.href = 'breakout.html';"><a href="breakout.html"></a></div>
+</body>
+</html>

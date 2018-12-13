@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @font-face {
+                font-family: Arcade;
+                src: url("Arcade.TTF");
+            }
+            .w3-arcade {
+                font-family: "Arcade";
+            }
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <meta charset="UTF-8"> 
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script
+			  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+			  crossorigin="anonymous"></script>
+    </head>
+    <body class="w3-arcade">
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large"
+              onclick="w3_close()">Close &times;</button>
+            <a href="breakout.html" class="w3-bar-item w3-button">Breakout</a>
+            <a href="pong.html" class="w3-bar-item w3-button">Pong</a>
+        </div>
+        <div id="main" class="w3-arcade">
+            <div class="w3-indigo">
+              <button id="openNav" class="w3-button w3-indigo w3-xlarge" onclick="w3_open()">&#9776;</button>
+              <div class="w3-container w3-arcade">
+                <h1 class="w3-arcade">Credits</h1>
+              </div>
+            </div>
+            <div class="w3-container">
+                <div class="w3-bar w3-btn w3-display-container w3-animate-top" id="1" onclick="document.getElementById('id01').style.display='block'" style="height: 100px;">
+                  <img src="https://www.gravatar.com/avatar/2f454f2d57e5a2512b1985e8015cc2a9" class="w3-circle w3-display-middle" style="width:85px">
+                </div>
+                  <div class="w3-modal" id="id01">
+                      <div class="w3-modal-content w3-animate-top">
+                         <header class="w3-container w3-indigo">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <h2 class="w3-arcade w3-large">Romoli Riccardo</h2>
+                          </header>
+                          <div class="w3-container">
+                            <div class="w3-bar">
+                                <img src="https://www.gravatar.com/avatar/2f454f2d57e5a2512b1985e8015cc2a9" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                                <div class="w3-bar-item">
+                                    <a href="mailto:romoli.riccardo@itismeucci.com"><span class="w3-small">romoli.riccardo@itismeucci.com</span></a>
+                                </div>
+                            </div>
+                          </div>
+                          <footer class="w3-container w3-indigo">
+                            <div class="w3-center w3-animate-zoom">Sviluppo</div>
+                          </footer>
+
+                      </div>
+                  </div>
+                <div class="w3-bar w3-btn w3-display-container w3-animate-left" id="2" onclick="document.getElementById('id02').style.display='block'" style="height: 100px;">
+                  <img src="https://yt3.ggpht.com/-7OJLxwCAa0M/AAAAAAAAAAI/AAAAAAAAAAA/_Qqg3je337k/s288-c-k-no-mo-rj-c0xffffff/photo.jpg" class="w3-circle w3-display-middle" style="width:85px">
+                </div>
+                <div class="w3-modal" id="id02">
+                      <div class="w3-modal-content w3-animate-top">
+                         <header class="w3-container w3-indigo">
+                            <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <h2 class="w3-arcade w3-large">Aldobrandi Lorenzo</h2>
+                          </header>
+                          <div class="w3-container">
+                            <div class="w3-bar">
+                                <img src="https://yt3.ggpht.com/-7OJLxwCAa0M/AAAAAAAAAAI/AAAAAAAAAAA/_Qqg3je337k/s288-c-k-no-mo-rj-c0xffffff/photo.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                                <div class="w3-bar-item">
+                                    <a href="mailto:aldobrandi.lorenzo@itismeucci.com"><span class="w3-small">aldobrandi.lorenzo@itismeucci.com</span></a>
+                                </div>
+                            </div>
+                          </div>
+                           <footer class="w3-container w3-indigo">
+                            <div class="w3-center w3-animate-zoom">Design</div>
+                          </footer>
+                      </div>
+                  </div>
+                <div class="w3-bar w3-btn w3-display-container w3-animate-bottom" onclick="document.getElementById('id03').style.display='block'" style="height: 100px;">
+                  <img src="https://yt3.ggpht.com/-ZRADpw72mjI/AAAAAAAAAAI/AAAAAAAAAAA/ym1e1FJqDMI/s100-c-k-no-mo-rj-c0xffffff/photo.jpg" class="w3-circle w3-display-middle" style="width:85px">
+                </div>
+              </div>
+            <div class="w3-modal" id="id03">
+                      <div class="w3-modal-content w3-animate-top">
+                         <header class="w3-container w3-indigo">
+                            <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <h2 class="w3-arcade w3-large">Marco Trambusti</h2>
+                          </header>
+                          <div class="w3-container">
+                            <div class="w3-bar">
+                                <img src="https://yt3.ggpht.com/-ZRADpw72mjI/AAAAAAAAAAI/AAAAAAAAAAA/ym1e1FJqDMI/s100-c-k-no-mo-rj-c0xffffff/photo.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                                <div class="w3-bar-item">
+                                    <a href="mailto:trambusti.marco@itismeucci.com"><span class="w3-small">trambusti.marco@itismeucci.com</span></a>
+                                </div>
+                            </div>
+                          </div>
+                           <footer class="w3-container w3-indigo">
+                            <div class="w3-center w3-animate-zoom">Musica 4B IA</div>
+                          </footer>
+                      </div>
+                  </div>
+        </div>
+        <script>
+            function w3_open() {
+              document.getElementById("main").style.marginLeft = "25%";
+              document.getElementById("mySidebar").style.width = "25%";
+              document.getElementById("mySidebar").style.display = "block";
+              document.getElementById("openNav").style.display = 'none';
+            }
+            function w3_close() {
+              document.getElementById("main").style.marginLeft = "0%";
+              document.getElementById("mySidebar").style.display = "none";
+              document.getElementById("openNav").style.display = "inline-block";
+            }
+          </script>
+        <script>
+        var sound = document.createElement("audio");
+    sound.src = "credits.mp3";
+    sound.volume= 0.2;
+    sound.setAttribute("preload", "auto");
+    sound.setAttribute("controls", "none");
+        sound.setAttribute("autoplay","true");
+         sound.setAttribute("loop","true");
+    sound.style.display = "none";
+    document.body.appendChild(this.sound);
+    </script>
+    </body>
+</html>

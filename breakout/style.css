@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Arcade;
+    src: url("Arcade.TTF");
+}
+body {
+		font-family: Arcade;
+		background: url("Background.gif");
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+* { 
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+canvas { 
+    background: none;
+    display: block; 
+    margin-top: 11.125em;
+    margin-left: 558px;
+}
+.gameover {
+    display: none;
+    width: 807px;
+    height: 533px;
+    margin-top: 11.125em;
+    margin-left: 558px;
+    background:  none;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;	text-align: center;
+}
+.gameover span:not(#retry) {
+    color: white;
+    display:inline;
+   width: 70px;
+   height:  100%;
+   margin: 0 auto;   vertical-align: middle;
+    font-size: 50px;		line-height: 261.5px;
+}
+
+#retry {	color: white;	display:block;
+    margin: 0 auto;
+}
